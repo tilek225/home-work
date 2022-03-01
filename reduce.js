@@ -94,12 +94,12 @@
 
 
 // 10 ??
-// const task10 = arr => {
-//     return arr.reduce((acc, rec) => {
-//
-//     })
-// }
-
+const task10 = arr => {
+    return arr.reduce((acc, rec) => {
+        return acc && rec;
+    }, true)
+}
+console.log(task10([true, false, true, true]));
 
 // 11
 // const task11 = arr => {
