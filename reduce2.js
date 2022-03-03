@@ -80,10 +80,23 @@
 // }
 // console.log(task9('hello,world,abra,carabfa,re,wrewer,rwer'));
 
-// 10??
+// 10 
+// const task10 = (str) => {
+//     return (str2) => {
+//         return `${str}/${str2}`
+//     }
+// }
+// const task = task10('http://google.com');
+// console.log(task('search'));
 
 // 11
 const task11 = (str, num) => {
-    return str.split()
+    return str.split('').reduce((acc, rec) => {
+        if (acc[acc.length - 1].length < num) {
+            acc[acc.length - 1] = acc[acc.length - 1] + rec
+            return acc
+        }
+        return [...acc, rec]
+    }, [''])
 }
-
+console.log(task11("abrac", 2));
