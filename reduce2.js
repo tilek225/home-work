@@ -90,13 +90,4 @@
 // console.log(task('search'));
 
 // 11
-const task11 = (str, num) => {
-    return str.split('').reduce((acc, rec) => {
-        if (acc[acc.length - 1].length < num) {
-            acc[acc.length - 1] = acc[acc.length - 1] + rec
-            return acc
-        }
-        return [...acc, rec]
-    }, [''])
-}
-console.log(task11("abrac", 2));
+
